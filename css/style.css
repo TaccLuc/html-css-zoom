@@ -12,54 +12,62 @@
     GENERAL
 */
 
-.zoom-container{
-    background-color: black;  
-    width: 100%;
-    height: 100vh; 
+main{
+    background-color: black;
+    position:relative;
+    height: 100vh;
 }
-
 .my-row{
     display: flex;
     flex-wrap: wrap;
 }
 
 .cameras-col{
-    width: calc((100% / 7) - 10px);
-    height: calc((100% / 5) - 10px);
-    padding: 5px;
+    width: calc((90% / 7));
 }
 
+.big-f-col{
+    width: calc((100% / 12) * 8 );
+}
+
+.small-f-col{
+    width: calc((100% / 12) * 2 );
+}
+
+.button{
+    background-color: transparent;
+    border: 0px;
+}
 /* 
     CAMERAS
 */
 
-.cameras{
-    padding: 30px;
-    height: calc(100% - 60px);
-    justify-content: center;
-    
+.cameras.my-row{
+    justify-content: center; 
+    align-items: center; 
+    padding-top: 50px;
 }
 
 .user{
     position: relative;
-   
 }
 
-.user-image img{
+.user-image{
     width: 100%;
-    height: 90px;
     display: block;
+    height: 100px;
+    padding: 5px;
 }
 
-.user .username{
+.user .user-name{
     color: white;
     background-color: rgba(211, 211, 211, 0.25);
     display: inline-block;
     padding: 2px;
     font-size: 0.7em;
     position: absolute;
-    bottom: 0;
-    left: 0;
+    bottom: 5px;
+    left: 5px;
 }
 
 /* 
@@ -67,7 +75,27 @@
 */
 
 .controls{
-    height: 100px;
+    height: 60px;
     width: 100%;
-    background-color: red;
+    background-color: #222222;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.button.my-row{
+    align-items: center;
+    justify-content: space-between;
+    max-width: 70px;
+}
+
+.controls .button {
+    color: white;
+}
+.controls .button > div{
+    display: inline-block;
+}
+
+.controls .button > div i{
+    font-size: 1.5em;
 }
