@@ -83,19 +83,28 @@ main{
     left: 0;
 }
 
-.button.my-row{
-    align-items: center;
-    justify-content: space-between;
-    max-width: 70px;
-}
-
 .controls .button {
     color: white;
 }
-.controls .button > div{
-    display: inline-block;
+
+.button-icon > i{
+    font-size: 1.7em;
+    margin-bottom: 5px;
+    line-height: 20px;
 }
 
-.controls .button > div i{
-    font-size: 1.5em;
+
+.small-f-col > button{
+    padding: 10px 10px 5px 10px;
+    border: 1px solid #222222;
+    border-radius: 5px;
+}
+
+.small-f-col > button:hover{
+    background-color: #3d3d3d;
+    border: 1px solid white;  
+}
+
+.small-f-col .button .fa-chevron-up{
+    padding-bottom: 10px;
 }
