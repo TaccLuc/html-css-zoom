@@ -13,10 +13,9 @@
 */
 
 .zoom-container{
-    background-color: black;
-    height: 100vh;
+    background-color: black;  
     width: 100%;
-    padding: 50px;
+    height: 100vh; 
 }
 
 .my-row{
@@ -25,20 +24,30 @@
 }
 
 .cameras-col{
-    width: calc(100% / 7);
+    width: calc((100% / 7) - 10px);
+    height: calc((100% / 5) - 10px);
+    padding: 5px;
 }
 
 /* 
     CAMERAS
 */
 
-.user{
-    position: relative; 
-    padding: 5px 2px;  
+.cameras{
+    padding: 30px;
+    height: calc(100% - 60px);
+    justify-content: center;
+    
 }
 
-.user > img{
+.user{
+    position: relative;
+   
+}
+
+.user-image img{
     width: 100%;
+    height: 90px;
     display: block;
 }
 
@@ -49,6 +58,16 @@
     padding: 2px;
     font-size: 0.7em;
     position: absolute;
-    bottom: 5px;
-    left: 2px;
+    bottom: 0;
+    left: 0;
+}
+
+/* 
+    CONTROLS
+*/
+
+.controls{
+    height: 100px;
+    width: 100%;
+    background-color: red;
 }
