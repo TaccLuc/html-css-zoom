@@ -24,7 +24,7 @@ main{
 }
 
 .cameras-col{
-    width: calc((90% / 7));
+    width: calc((100% / 7) - 1%);
 }
 
 .big-f-col{
@@ -68,7 +68,7 @@ main{
 .user-image{
     width: 100%;
     display: block;
-    height: 100px;
+    height: 16vh;
     padding: 5px;
 }
 
